@@ -25,9 +25,10 @@ const imageArray = [
 console.log(imageArray)
 let index = 0;
 next.addEventListener('click', () => {
-index++;
 if (index >= imageArray.length) {
     index = 0;
+}else {
+index++;
 }
 container.style.background = imageArray[index].color;
 image.classList.add( 'animate__bounceInLeft');
